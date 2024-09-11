@@ -26,11 +26,8 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-28 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
               <li>
                 <select>
                   <option>Shope</option>
@@ -42,7 +39,13 @@ const Navbar = () => {
               </li>
 
               <li>
-                <a>Item 3</a>
+                <a>On Sale</a>
+              </li>
+              <li>
+                <a>New Arrivals</a>
+              </li>
+              <li>
+                <a>Brands</a>
               </li>
             </ul>
           </div>
