@@ -1,4 +1,6 @@
+import NewArrival from "../../components/NewArrival";
 import Sponser from "../../components/Sponser";
+import TopSelling from "../../components/TopSelling";
 import Banner from "./Banner";
 
 const Homepage = () => {
@@ -6,6 +8,8 @@ const Homepage = () => {
     <div>
       <Banner></Banner>
       <Sponser></Sponser>
+      <NewArrival></NewArrival>
+      <TopSelling></TopSelling>
     </div>
   );
 };

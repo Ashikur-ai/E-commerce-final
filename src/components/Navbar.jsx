@@ -5,7 +5,7 @@ import { LuShoppingCart } from "react-icons/lu";
 const Navbar = () => {
   return (
     <div className="bg-base-100 shadow-lg">
-      <div className="navbar justify-between  max-w-[1240px] mx-auto md:px-10 px-3 ">
+      <div className="navbar justify-between  container mx-auto md:px-10 px-3 ">
         <div className="">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

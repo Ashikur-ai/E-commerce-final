@@ -1,7 +1,7 @@
 const Banner = () => {
   return (
     <div className="bg-[#F2F0F1]">
-      <div className=" max-w-[1240px] mx-auto md:flex md:gap-x-6">
+      <div className=" container mx-auto md:flex md:gap-x-6">
         <div className="md:px-10 px-3 py-14">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-6xl font-bold">
