@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const NewArrival = () => {
 
@@ -16,30 +17,33 @@ const NewArrival = () => {
       <h2 className="text-center text-5xl font-bold">NEW ARRIVALS</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10 px-5 lg:px-0">
-        <div className="">
-          <div className="bg-[#F0EEED] p-5 rounded-[20px] h-[310px]">
-            <img
-              src="https://res.cloudinary.com/dqescabbl/image/upload/v1726239760/image_7-removebg-preview_yzhicn.png"
-              alt=""
-            />
-          </div>
-          <h2 className="text-xl font-bold pt-5"> T-SHIRT WITH TAPE DETAILS</h2>
+        <Link to="/product-details">
+
+          <div className="">
+            <div className="bg-[#F0EEED] p-5 rounded-[20px] h-[310px]">
+              <img
+                src="https://res.cloudinary.com/dqescabbl/image/upload/v1726239760/image_7-removebg-preview_yzhicn.png"
+                alt=""
+              />
+            </div>
+            <h2 className="text-xl font-bold pt-5"> T-SHIRT WITH TAPE DETAILS</h2>
 
 
-          <div className="flex items-center gap-4">
-            <div>
-              <span className="text-2xl" data-index="0" data-forhalf="★" style={star}>★</span>
-              <span className="text-2xl" data-index="2" data-forhalf="★" style={star}>★</span>
-              <span className="text-2xl" data-index="0" data-forhalf="★" style={star}>★</span>
-              <span className="text-2xl" data-index="0" data-forhalf="★" style={star}>★</span>
-              <span className="text-2xl" data-index="0" data-forhalf="★" style={star}>★</span>
+            <div className="flex items-center gap-4">
+              <div>
+                <span className="text-2xl" data-index="0" data-forhalf="★" style={star}>★</span>
+                <span className="text-2xl" data-index="2" data-forhalf="★" style={star}>★</span>
+                <span className="text-2xl" data-index="0" data-forhalf="★" style={star}>★</span>
+                <span className="text-2xl" data-index="0" data-forhalf="★" style={star}>★</span>
+                <span className="text-2xl" data-index="0" data-forhalf="★" style={star}>★</span>
+              </div>
+              <div className="flex justify-center items-center">
+                <span className=" text-center text-xl pt-2">4.5/5</span>
+              </div>
             </div>
-            <div className="flex justify-center items-center">
-              <span className=" text-center text-xl pt-2">4.5/5</span>
-            </div>
+            <h2 className="text-2xl font-bold">$120</h2>
           </div>
-          <h2 className="text-2xl font-bold">$120</h2>
-        </div>
+        </Link>
         <div className="">
           <div className="bg-[#F0EEED] p-5 rounded-[20px] h-[310px]">
             <img
