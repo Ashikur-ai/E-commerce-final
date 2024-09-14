@@ -1,6 +1,7 @@
 import { FaRegCircleUser } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
 import { LuShoppingCart } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -49,7 +50,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className=" text-3xl font-bold">SHOP.CO</a>
+          <Link to="/" className=" text-3xl font-bold">SHOP.CO</Link>
         </div>
         <div className=" hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
