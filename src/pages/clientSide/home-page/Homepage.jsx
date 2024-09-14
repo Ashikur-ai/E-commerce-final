@@ -1,7 +1,8 @@
-import NewArrival from "../../components/NewArrival";
-import Sponser from "../../components/Sponser";
-import TopSelling from "../../components/TopSelling";
 import Banner from "./Banner";
+import NewArrival from "./NewArrival";
+import Sponser from "./Sponser";
+import TopSelling from "./TopSelling";
+
 
 const Homepage = () => {
   return (
