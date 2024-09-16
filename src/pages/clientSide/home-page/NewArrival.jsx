@@ -13,7 +13,7 @@ const NewArrival = () => {
   }
 
   return (
-    <div className="w-4/5 mx-auto my-20">
+    <div className="container mx-auto my-20">
       <h2 className="text-center text-5xl font-bold">NEW ARRIVALS</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10 px-5 lg:px-0">
