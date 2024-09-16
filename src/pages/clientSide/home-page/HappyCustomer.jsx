@@ -17,7 +17,7 @@ const HappyCustomer = () => {
   return (
     <div className='container mx-auto my-10'>
     <div className=" pt-10">
-       <h2 className="text-4xl font-bold">OUR HAPPY CUSTOMERS</h2>
+       <h2 className="lg:text-4xl text-2xl font-bold ml-5">OUR HAPPY CUSTOMERS</h2>
     </div>
       <Swiper
         effect={"coverflow"}
