@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: "SUSE", system-ui;
+* {
+  font-family: "SUSE", system-ui;
 }
