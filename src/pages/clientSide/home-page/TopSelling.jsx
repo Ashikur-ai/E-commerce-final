@@ -3,7 +3,7 @@ import Product from "./product";
 
 const TopSelling = () => {
   const products = useLoaderData();
-  console.log(products);
+
   return (
     <div className="container mx-auto my-20">
       <h2 className="text-center text-5xl font-bold">TOP SELLING</h2>
