@@ -8,7 +8,7 @@ const NewArrival = () => {
       <h2 className="text-center text-5xl font-bold">NEW ARRIVALS</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10 px-5 lg:px-0">
-        {products.slice(0, 8).map((product) => (
+        {products.slice(0, 8)?.map((product) => (
           <Product key={product.id} product={product}></Product>
         ))}
       </div>
