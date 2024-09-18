@@ -1,8 +1,24 @@
 import React from 'react'
 import { FcGoogle } from 'react-icons/fc'
 import { IoMdLogIn } from 'react-icons/io'
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import app from '../../../firebase/firebase.init';
 
 const Register = () => {
+
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+    
+
+    const googleRegister = ()=>{
+        signInWithPopup(auth, provider)
+        .then((result)=>{
+            console.log(result);
+        })
+        .catch((error)=>{
+            console.log(error.message);
+        })
+    }
 
     const handleRegister =(event)=>{
         event.preventDefault();
@@ -66,7 +82,7 @@ const Register = () => {
                     </div>
                     <div className="divider">OR</div>
                     <div className="text-center my-5">
-                        <button className='btn bg-theme_secondary text-black px-12 hover:bg-theme_primary hover:text-theme_primary text-lg'><FcGoogle />Google Sign in</button>
+                        <button onClick={googleRegister} className='btn bg-theme_secondary text-black px-12 hover:bg-theme_primary hover:text-theme_primary text-lg'><FcGoogle />Google Sign in</button>
                     </div>
                 </div>
             </div>
