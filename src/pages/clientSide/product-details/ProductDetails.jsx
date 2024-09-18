@@ -5,6 +5,7 @@ import ProductReview from "../../../components/ProductReview";
 import Product from "../home-page/product";
 
 const ProductDetails = () => {
+    window.scrollTo(0, 0);
   const products = useLoaderData();
   // console.log(products);
 
@@ -177,7 +178,7 @@ const ProductDetails = () => {
       <div className="my-16">
         <h2 className="text-center text-5xl font-bold">YOU MIGHT ALSO LIKE</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10 px-5 lg:px-0">
-          {products.slice(5, 9).map((product) => (
+          {products?.slice(5, 9).map((product) => (
             <Product key={product.id} product={product}></Product>
           ))}
         </div>
