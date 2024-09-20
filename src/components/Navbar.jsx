@@ -48,6 +48,9 @@ const Navbar = () => {
               <li>
                 <a>Brands</a>
               </li>
+              <li>
+               <Link to={`/category`}>Category</Link>
+              </li>
             </ul>
           </div>
           <Link to="/" className=" text-3xl font-bold">SHOP.CO</Link>
@@ -84,6 +87,9 @@ const Navbar = () => {
             <li>
               <a>Brands</a>
             </li>
+            <li>
+               <Link to={`/category`}>Category</Link>
+              </li>
           </ul>
         </div>
         <div className=" space-x-12 md:space-x-4">

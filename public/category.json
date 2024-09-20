@@ -1,11 +1,7 @@
 [
   {
     "id": 1,
-    "product_images": [
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726513893/image_8_mbv2pr.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726513843/images_axuntg.jpg",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726513830/0062376_040_a_syilev.jpg"
-    ],
+    "product_images": "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726513893/image_8_mbv2pr.png",
     "product_title": "Slim Fit Chinos",
     "product_price": 120.0,
     "product_discount_price": 140.0,
@@ -48,11 +44,8 @@
   },
   {
     "id": 2,
-    "product_images": [
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726501600/image_9-removebg-preview_wziy6b_elaqg0.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726514517/images_2_ysdmwx.jpg",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726514519/images_1_jvvch8.jpg"
-    ],
+    "product_images": "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726501600/image_9-removebg-preview_wziy6b_elaqg0.png",
+
     "product_title": "Classic Button-Down Shirt",
     "product_price": 70.0,
     "product_discount_price": 100.0,
@@ -95,11 +88,8 @@
   },
   {
     "id": 3,
-    "product_images": [
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726501551/image_8__1_-removebg-preview_zv14lr_ajpz8w.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726501560/image_7-removebg-preview_yzhicn_msamuy.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726511359/Frame_33_yevjec.png"
-    ],
+    "product_images": "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726501551/image_8__1_-removebg-preview_zv14lr_ajpz8w.png",
+
     "product_title": "Graphic T-Shirt",
     "product_price": 230.0,
     "product_discount_price": 270.0,
@@ -142,11 +132,8 @@
   },
   {
     "id": 4,
-    "product_images": [
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726514840/image_10_ukjhnv.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726562124/images__9_-removebg-preview_htvvsb.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726514989/images_4_jvykvy.jpg"
-    ],
+    "product_images": "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726514840/image_10_ukjhnv.png",
+
     "product_title": "Distressed Jeans",
     "product_price": 75.0,
     "product_discount_price": 160.0,
@@ -189,11 +176,8 @@
   },
   {
     "id": 5,
-    "product_images": [
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726515278/image_7_1_oeq9uh.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726515575/images_5_kxwdam.jpg",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726515758/download_1_fp4x9r.jpg"
-    ],
+    "product_images": "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726515278/image_7_1_oeq9uh.png",
+
     "product_title": "Vertical Striped Shirt",
     "product_price": 65.0,
     "product_discount_price": 80.0,
@@ -236,11 +220,8 @@
   },
   {
     "id": 6,
-    "product_images": [
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726518699/71pqrVLTbKL._US500_-removebg-preview_qjuy9q.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726516018/8978xHEATHERSKYBLUExPrimary_67360126_bf57ex.jpg",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726515972/download_2_w7wc62.jpg"
-    ],
+    "product_images": "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726518699/71pqrVLTbKL._US500_-removebg-preview_qjuy9q.png",
+
     "product_title": "Tailored Dress Shirt",
     "product_price": 85.0,
     "product_discount_price": 115.0,
@@ -283,11 +264,8 @@
   },
   {
     "id": 7,
-    "product_images": [
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726516344/image_9_v1ihcs.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726516436/pepe-jeans-bermudas-loose-dobby-pm801083-3082642-f_wnbljq.jpg",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726516448/images_6_qthytz.jpg"
-    ],
+    "product_images": "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726516344/image_9_v1ihcs.png",
+
     "product_title": "Loose Fit Bermuda Shorts",
     "product_price": 240.0,
     "product_discount_price": 280.0,
@@ -330,11 +308,8 @@
   },
   {
     "id": 8,
-    "product_images": [
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726516948/weekend-mode-on_cswzbd.jpg",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726516959/download_3_s30m7p.jpg",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726516965/images_7_nj76rm.jpg"
-    ],
+    "product_images": "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726516948/weekend-mode-on_cswzbd.jpg",
+
     "product_title": "Weekend Hoodie",
     "product_price": 200.0,
     "product_discount_price": 245.0,
@@ -378,11 +353,8 @@
 
   {
     "id": 9,
-    "product_images": [
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726562682/blue-300x300-removebg-preview_cjrxvu.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726560109/41zB5QDUesL._AC_SX385_-removebg-preview_x9wfrp.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726560219/41qYZ0HeHDL._AC_UY1000_-removebg-preview_n6mwwi.png"
-    ],
+    "product_images": "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726562682/blue-300x300-removebg-preview_cjrxvu.png",
+
     "product_title": "Trendy Sneakers Shirt",
     "product_price": 150.0,
     "product_discount_price": 180.0,
@@ -426,11 +398,8 @@
 
   {
     "id": 10,
-    "product_images": [
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726559265/image_7-removebg-preview_yzhicn_msamuy_1_-removebg-preview_mcfold.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726560390/aaf25481a8ff059572d33a7ae6305c98.jpg_720x720q80-removebg-preview_hcxa6d.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726559292/Frame_32_yzi1mo_1_-removebg-preview_unp3sf.png"
-    ],
+    "product_images": "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726559265/image_7-removebg-preview_yzhicn_msamuy_1_-removebg-preview_mcfold.png",
+
     "product_title": "Summer Vibes T-Shirt",
     "product_price": 150.0,
     "product_discount_price": 180.0,
@@ -474,11 +443,8 @@
 
   {
     "id": 11,
-    "product_images": [
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726559688/images__8_-removebg-preview_vkhssv.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726559326/images_7_nj76rm_1_-removebg-preview_zuwoyo.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726561315/download_3_s30m7p_1_-removebg-preview_se7cah.png"
-    ],
+    "product_images": "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726559688/images__8_-removebg-preview_vkhssv.png",
+
     "product_title": "Classic Leather Jacket",
     "product_price": 350.0,
     "product_discount_price": 400.0,
@@ -517,11 +483,8 @@
 
   {
     "id": 12,
-    "product_images": [
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726561153/0a2031911e6a6172d7aa00f0d655c1d3.jpg_720x720q80-removebg-preview_um91rc.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726561153/0a2031911e6a6172d7aa00f0d655c1d3.jpg_720x720q80-removebg-preview_um91rc.png",
-      "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726561661/download__6_-removebg-preview_d07ouo.png"
-    ],
+    "product_images": "https://res.cloudinary.com/dvp64j4a3/image/upload/v1726561153/0a2031911e6a6172d7aa00f0d655c1d3.jpg_720x720q80-removebg-preview_um91rc.png",
+
     "product_title": "Vintage Denim Jeans",
     "product_price": 85.0,
     "product_discount_price": 100.0,
