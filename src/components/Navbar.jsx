@@ -49,11 +49,17 @@ const Navbar = () => {
                 <a>Brands</a>
               </li>
               <li>
+
                <Link to={`/category`}>Category</Link>
+
+                <Link to={"/cart"}>Cart</Link>
+
               </li>
             </ul>
           </div>
-          <Link to="/" className=" text-3xl font-bold">SHOP.CO</Link>
+          <Link to="/" className=" text-3xl font-bold">
+            SHOP.CO
+          </Link>
         </div>
         <div className=" hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -88,8 +94,13 @@ const Navbar = () => {
               <a>Brands</a>
             </li>
             <li>
+
                <Link to={`/category`}>Category</Link>
               </li>
+
+              <Link to={"/cart"}>Cart</Link>
+            </li>
+
           </ul>
         </div>
         <div className=" space-x-12 md:space-x-4">
