@@ -2,30 +2,28 @@ import React, { useContext } from 'react'
 import { FcGoogle } from 'react-icons/fc'
 import { IoMdLogIn } from 'react-icons/io'
 
-
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../provider/AuthProvider';
 
-const Register = () => {
+const LoginPage = () => {
 
-    const {emailRegister} = useContext(AuthContext);
-    console.log(emailRegister);
+    const {emailLogin} = useContext(AuthContext);
     const navigate = useNavigate();
 
-    const handleRegister = (event) => {
+    const handleLogin = (event) => {
         event.preventDefault();
         const form = event.target;
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
         const data = { name, email, password };
-        emailRegister(email, password)
-        .then(result => {
-            console.log(result.user);
-            navigate('/');
+        emailLogin(email, password)
+        .then(res => {
+            console.log(res.user);
+            navigate("/");
         })
-        .catch(err =>{
-            console.log(err.message)
+        .catch(err => {
+            console.log(err.message);
         })
     }
 
@@ -39,17 +37,17 @@ const Register = () => {
                     </div>
                 </div>
                 <div className="lg:w-2/5">
-                    <Link to={"/login"}>
+                    <Link to={"/register"}>
                         <div className="text-center my-5">
-                            <button className='btn bg-theme_primary text-white px-12 hover:bg-white hover:text-theme_primary text-lg'><IoMdLogIn />Sign in</button>
+                            <button className='btn bg-theme_primary text-white px-12 hover:bg-white hover:text-theme_primary text-lg'><IoMdLogIn />Create Account</button>
                         </div>
                     </Link>
 
                     <div className=" w-11/12 mx-auto  lg:mt-20 ">
-                        <p className='font-bold'>Registration</p>
-                        <p>Create your free account</p>
+                        <p className='font-bold'>Login</p>
+                        <p>Enter your account credentials</p>
 
-                        <form action="" onSubmit={handleRegister} className=''>
+                        <form action="" onSubmit={handleLogin} className=''>
 
                             {/* Name */}
                             <label className="form-control w-full max-w-xs">
@@ -76,7 +74,7 @@ const Register = () => {
                             </label>
 
                             <div className="">
-                                <button className='bg-theme_primary text-white btn mt-5'>Register</button>
+                                <button className='bg-theme_primary text-white btn mt-5'>Login</button>
 
                             </div>
                         </form>
@@ -91,4 +89,4 @@ const Register = () => {
     )
 }
 
-export default Register
+export default LoginPage
