@@ -3,7 +3,11 @@ import MainLayout from "../layouts/MainLayout";
 import Homepage from "../pages/clientSide/home-page/Homepage";
 import ProductDetails from "../pages/clientSide/product-details/ProductDetails";
 import Register from "../pages/clientSide/register/Register";
+
+import CategoryPage from "../pages/clientSide/CategoryPage/CategoryPage";
+
 import Cart from "../pages/clientSide/cart/Cart";
+
 
 const router = createBrowserRouter([
   {
@@ -21,9 +25,16 @@ const router = createBrowserRouter([
         loader: () => fetch("product.json"),
       },
       {
+
+        path: "/category",
+        element: <CategoryPage></CategoryPage>,
+        loader: () => fetch("category.json"),
+      }
+
         path: "/cart",
         element: <Cart></Cart>,
       },
+
     ],
   },
   {

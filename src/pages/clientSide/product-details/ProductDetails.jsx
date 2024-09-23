@@ -10,7 +10,7 @@ const ProductDetails = () => {
   // console.log(products);
 
   const { id } = useParams();
-  console.log(id);
+
   const product = products.find((pro) => pro.id === +id);
 
   const {
