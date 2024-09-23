@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout";
 import Homepage from "../pages/clientSide/home-page/Homepage";
 import ProductDetails from "../pages/clientSide/product-details/ProductDetails";
 import Register from "../pages/clientSide/register/Register";
+import Cart from "../pages/clientSide/cart/Cart";
 
 const router = createBrowserRouter([
   {
@@ -19,12 +20,16 @@ const router = createBrowserRouter([
         element: <ProductDetails></ProductDetails>,
         loader: () => fetch("product.json"),
       },
+      {
+        path: "/cart",
+        element: <Cart></Cart>,
+      },
     ],
   },
   {
-    path: '/register',
-    element: <Register></Register>
-  }
+    path: "/register",
+    element: <Register></Register>,
+  },
 ]);
 
 export default router;
