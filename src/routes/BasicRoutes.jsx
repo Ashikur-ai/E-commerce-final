@@ -7,6 +7,8 @@ import Register from "../pages/clientSide/register/Register";
 import CategoryPage from "../pages/clientSide/CategoryPage/CategoryPage";
 
 import Cart from "../pages/clientSide/cart/Cart";
+import LoginPage from "../pages/clientSide/login/LoginPage";
+import DashboardLayout from "../layouts/DashboardLayout";
 
 
 const router = createBrowserRouter([
@@ -29,8 +31,8 @@ const router = createBrowserRouter([
         path: "/category",
         element: <CategoryPage></CategoryPage>,
         loader: () => fetch("category.json"),
-      }
-
+      },
+      {
         path: "/cart",
         element: <Cart></Cart>,
       },
@@ -41,6 +43,16 @@ const router = createBrowserRouter([
     path: "/register",
     element: <Register></Register>,
   },
+  {
+    path: "/login",
+    element: <LoginPage></LoginPage>
+  },
+
+  {
+    path: "/dashboard",
+    element: <DashboardLayout></DashboardLayout>
+  }
+
 ]);
 
 export default router;

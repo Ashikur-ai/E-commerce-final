@@ -1,9 +1,24 @@
-import { FaRegCircleUser } from "react-icons/fa6";
+import { useContext } from "react";
+import { FaRegCircleUser, FaUser } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
 import { LuShoppingCart } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
+
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = ()=>{
+    logOut()
+    .then(res => {
+      console.log('Logout successful')
+    })
+    .catch(err => {
+      console.log(err.message);
+    })
+  }
+
   return (
     <div className="bg-base-100 shadow-lg">
       <div className="navbar justify-between  container mx-auto md:px-10 px-3 ">
@@ -50,7 +65,7 @@ const Navbar = () => {
               </li>
               <li>
 
-               <Link to={`/category`}>Category</Link>
+                <Link to={`/category`}>Category</Link>
 
                 <Link to={"/cart"}>Cart</Link>
 
@@ -95,9 +110,9 @@ const Navbar = () => {
             </li>
             <li>
 
-               <Link to={`/category`}>Category</Link>
-              </li>
-
+              <Link to={`/category`}>Category</Link>
+            </li>
+            <li>
               <Link to={"/cart"}>Cart</Link>
             </li>
 
@@ -127,8 +142,20 @@ const Navbar = () => {
             </div>
           </fieldset>
           <div className="flex text-xl gap-x-3">
-            <LuShoppingCart />
-            <FaRegCircleUser />
+
+
+            {
+              user ? <div className="flex justify-center items-center gap-4">
+                <LuShoppingCart />
+                <div className="tooltip tooltip-bottom" data-tip={`${user.email}`}>
+                  <FaRegCircleUser />
+                </div>
+                <button onClick={handleLogOut} className="btn bg-black text-white">Logout</button>
+              </div>
+                : <Link to={"/register"}>
+                  <button className="btn bg-black text-white">Register</button>
+                </Link>
+            }
           </div>
         </div>
       </div>
