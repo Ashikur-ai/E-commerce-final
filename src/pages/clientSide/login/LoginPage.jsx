@@ -1,22 +1,23 @@
-import React, { useContext } from 'react'
-import { FcGoogle } from 'react-icons/fc'
-import { IoMdLogIn } from 'react-icons/io'
+import { useContext } from 'react';
+import { FcGoogle } from 'react-icons/fc';
+import { IoMdLogIn } from 'react-icons/io';
 
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../provider/AuthProvider';
 
 const LoginPage = () => {
 
-    const {emailLogin} = useContext(AuthContext);
+    const {emailLogin,signInWithGoogle} = useContext(AuthContext);
     const navigate = useNavigate();
 
     const handleLogin = (event) => {
         event.preventDefault();
         const form = event.target;
-        const name = form.name.value;
+        console.log('submiter')
+       
         const email = form.email.value;
         const password = form.password.value;
-        const data = { name, email, password };
+        
         emailLogin(email, password)
         .then(res => {
             console.log(res.user);
@@ -27,6 +28,14 @@ const LoginPage = () => {
         })
     }
 
+    const handleGoogleLogin = ()=>{
+        signInWithGoogle()
+       .then(res => {
+        console.log(res.user);
+        navigate("/");
+       })
+
+    }
     return (
         <div>
             <div className="min-h-screen lg:flex">
@@ -81,7 +90,7 @@ const LoginPage = () => {
                     </div>
                     <div className="divider">OR</div>
                     <div className="text-center my-5">
-                        <button  className='btn bg-theme_secondary text-black px-12 hover:bg-theme_primary hover:text-theme_primary text-lg'><FcGoogle />Google Sign in</button>
+                        <button onClick={handleGoogleLogin}  className='btn bg-theme_secondary text-black px-12 hover:bg-theme_primary hover:text-theme_primary text-lg'><FcGoogle />Google Sign in</button>
                     </div>
                 </div>
             </div>
