@@ -9,6 +9,8 @@ import CategoryPage from "../pages/clientSide/CategoryPage/CategoryPage";
 import Cart from "../pages/clientSide/cart/Cart";
 import LoginPage from "../pages/clientSide/login/LoginPage";
 import DashboardLayout from "../layouts/DashboardLayout";
+import UserProfile from "../components/adminSide/UserProfile";
+import UpdateProfile from "../components/adminSide/UpdateProfile";
 
 
 const router = createBrowserRouter([
@@ -50,7 +52,17 @@ const router = createBrowserRouter([
 
   {
     path: "/dashboard",
-    element: <DashboardLayout></DashboardLayout>
+    element: <DashboardLayout></DashboardLayout>,
+    children: [
+      {
+        path: "/dashboard",
+        element: <UserProfile></UserProfile>
+      },
+      {
+        path: "/dashboard/update-user",
+        element: <UpdateProfile></UpdateProfile>
+      }
+    ]
   }
 
 ]);
