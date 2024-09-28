@@ -21,7 +21,7 @@ const LoginPage = () => {
         emailLogin(email, password)
         .then(res => {
             console.log(res.user);
-            navigate("/");
+            navigate("/dashboard");
         })
         .catch(err => {
             console.log(err.message);
@@ -32,7 +32,7 @@ const LoginPage = () => {
         signInWithGoogle()
        .then(res => {
         console.log(res.user);
-        navigate("/");
+        navigate("/dashboard");
        })
 
     }

@@ -8,9 +8,18 @@ import { AuthContext } from '../../../provider/AuthProvider';
 
 const Register = () => {
 
-    const {emailRegister} = useContext(AuthContext);
+    const {emailRegister, signInWithGoogle} = useContext(AuthContext);
     console.log(emailRegister);
     const navigate = useNavigate();
+
+    const handleGoogleLogin = ()=>{
+        signInWithGoogle()
+       .then(res => {
+        console.log(res.user);
+        navigate("/");
+       })
+
+    }
 
     const handleRegister = (event) => {
         event.preventDefault();
@@ -83,7 +92,7 @@ const Register = () => {
                     </div>
                     <div className="divider">OR</div>
                     <div className="text-center my-5">
-                        <button  className='btn bg-theme_secondary text-black px-12 hover:bg-theme_primary hover:text-theme_primary text-lg'><FcGoogle />Google Sign in</button>
+                        <button onClick={handleGoogleLogin}  className='btn bg-theme_secondary text-black px-12 hover:bg-theme_primary hover:text-theme_primary text-lg'><FcGoogle />Google Sign in</button>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,19 @@
 
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { AuthContext } from '../../provider/AuthProvider'
 
 const AdminNavbar = () => {
+    const { logOut } = useContext(AuthContext);
+    const handleLogout = () => {
+        logOut()
+            .then(() => {
+
+                navigate('/')
+            })
+    }
+
+
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1">
@@ -23,13 +35,13 @@ const AdminNavbar = () => {
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow">
                         <li>
-                            <a className="justify-between">
+                            <Link to="/dashboard/admin-profile" className="justify-between">
                                 Profile
                                 <span className="badge">New</span>
-                            </a>
+                            </Link>
                         </li>
-                        
-                        <li><a>Logout</a></li>
+
+                        <li onClick={handleLogout}><a>Logout</a></li>
                     </ul>
                 </div>
             </div>

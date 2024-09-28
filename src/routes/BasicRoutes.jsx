@@ -11,6 +11,8 @@ import LoginPage from "../pages/clientSide/login/LoginPage";
 import DashboardLayout from "../layouts/DashboardLayout";
 import UserProfile from "../components/adminSide/UserProfile";
 import UpdateProfile from "../components/adminSide/UpdateProfile";
+import PrivateRoutes from "./PrivateRoutes";
+import AdminProfile from "../pages/adminSide/adminRelatedPages/adminProfile/AdminProfile";
 
 
 const router = createBrowserRouter([
@@ -52,15 +54,19 @@ const router = createBrowserRouter([
 
   {
     path: "/dashboard",
-    element: <DashboardLayout></DashboardLayout>,
+    element: <PrivateRoutes><DashboardLayout></DashboardLayout></PrivateRoutes>,
     children: [
       {
         path: "/dashboard",
-        element: <UserProfile></UserProfile>
+        element: <div>This is Dashboard</div>
       },
       {
         path: "/dashboard/update-user",
         element: <UpdateProfile></UpdateProfile>
+      },
+      {
+        path: "admin-profile",
+        element: <AdminProfile></AdminProfile>
       }
     ]
   }

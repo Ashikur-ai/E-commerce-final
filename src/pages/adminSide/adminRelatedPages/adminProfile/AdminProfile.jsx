@@ -1,11 +1,10 @@
-import { useContext } from "react";
-import { AuthContext } from "../../provider/AuthProvider";
+import React, { useContext } from 'react'
+import { AuthContext } from '../../../../provider/AuthProvider'
 
-const UserProfile = () => {
-	const { user } = useContext(AuthContext)
-	console.log(user.photoURL);
-	return (
-		<div className="flex flex-col justify-center w-96 mx-auto mt-5 p-6 shadow-md rounded-xl sm:px-12 bg-gray-900 text-gray-100">
+const AdminProfile = () => {
+    const { user } = useContext(AuthContext)
+  return (
+    <div className="flex flex-col justify-center w-96 mx-auto mt-5 p-6 shadow-md rounded-xl sm:px-12 bg-gray-900 text-gray-100">
 			<img src={user?.photoURL} alt="" className="w-32 h-32 mx-auto rounded-full bg-gray-500 aspect-square mask-decagon mask " />
 			<div className="space-y-4 text-center divide-y divide-gray-700">
 				<div className="my-2 space-y-1">
@@ -36,7 +35,7 @@ const UserProfile = () => {
 				</div>
 			</div>
 		</div>
-	);
-};
+  )
+}
 
-export default UserProfile;
+export default AdminProfile
