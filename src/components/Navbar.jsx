@@ -9,81 +9,17 @@ const Navbar = () => {
 
   const { user, logOut } = useContext(AuthContext);
 
-  const handleLogOut = ()=>{
-    logOut()
-    .then(res => {
-      console.log('Logout successful')
-    })
-    .catch(err => {
-      console.log(err.message);
-    })
-  }
 
-  return (
-    <div className="bg-base-100 shadow-lg">
-      <div className="navbar justify-between  container mx-auto md:px-10 px-3 ">
-        <div className="">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow"
-            >
-              <li>
-                <select>
-                  <option>Shope</option>
-                  <option>t-Shirt</option>
-                  <option>Shirts</option>
-                  <option>Hoodie</option>
-                  <option>Jeans</option>
-                </select>
-              </li>
 
-              <li>
-                <a>On Sale</a>
-              </li>
-              <li>
-                <a>New Arrivals</a>
-              </li>
-              <li>
-                <a>Brands</a>
-              </li>
-              <li>
-
-                <Link to={`/category`}>Category</Link>
-
-                <Link to={"/cart"}>Cart</Link>
-
-              </li>
-            </ul>
-          </div>
-          <Link to="/" className=" text-3xl font-bold">
-            SHOP.CO
-          </Link>
-        </div>
-        <div className=" hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
+  const NavLinks = 
+  <>
+ 
+  <li>
               <details className="z-30">
                 <summary>Shope</summary>
                 <ul>
                   <li>
-                    <a>t-Shirt</a>
+                    <Link to={""}>t-Shirt</Link>
                   </li>
                   <li>
                     <a>Shirts</a>
@@ -115,6 +51,57 @@ const Navbar = () => {
             <li>
               <Link to={"/cart"}>Cart</Link>
             </li>
+  
+  </>
+
+  const handleLogOut = ()=>{
+    logOut()
+    .then(res => {
+      console.log('Logout successful')
+    })
+    .catch(err => {
+      console.log(err.message);
+    })
+  }
+
+  return (
+    <div className="bg-base-100 shadow-lg">
+      <div className="navbar justify-between  container mx-auto md:px-10 px-3 ">
+        {/* Mobile View  */}
+        <div className="">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow"
+            >
+              {NavLinks}
+            </ul>
+          </div>
+          <Link to="/" className=" text-3xl font-bold">
+            SHOP.CO
+          </Link>
+        </div>
+
+        {/* Desktop view  */}
+        <div className=" hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
+            {NavLinks}
 
           </ul>
         </div>

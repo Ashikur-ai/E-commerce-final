@@ -13,9 +13,14 @@ import UserProfile from "../components/adminSide/UserProfile";
 import UpdateProfile from "../components/adminSide/UpdateProfile";
 import PrivateRoutes from "./PrivateRoutes";
 import AdminProfile from "../pages/adminSide/adminRelatedPages/adminProfile/AdminProfile";
+import Dashboard from "../pages/adminSide/dashboard/Dashboard";
+import ManageProducts from "../pages/adminSide/productRelatedPages/manageProducts/ManageProducts";
+import Shope from "../pages/clientSide/shope/Shope";
 
 
 const router = createBrowserRouter([
+
+  // client side routes 
   {
     path: "/",
     element: <MainLayout></MainLayout>,
@@ -40,9 +45,15 @@ const router = createBrowserRouter([
         path: "/cart",
         element: <Cart></Cart>,
       },
+      {
+        path: "/shope-product/:category",
+        element: <Shope></Shope>
+      }
 
     ],
   },
+
+
   {
     path: "/register",
     element: <Register></Register>,
@@ -52,13 +63,15 @@ const router = createBrowserRouter([
     element: <LoginPage></LoginPage>
   },
 
+  // Dashboard related routes 
+
   {
     path: "/dashboard",
     element: <PrivateRoutes><DashboardLayout></DashboardLayout></PrivateRoutes>,
     children: [
       {
         path: "/dashboard",
-        element: <div>This is Dashboard</div>
+        element: <Dashboard></Dashboard>
       },
       {
         path: "/dashboard/update-user",
@@ -67,7 +80,12 @@ const router = createBrowserRouter([
       {
         path: "admin-profile",
         element: <AdminProfile></AdminProfile>
-      }
+      },
+      {
+        path: "manage-products",
+        element: <ManageProducts></ManageProducts>
+      },
+      
     ]
   }
 
